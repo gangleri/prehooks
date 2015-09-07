@@ -1,14 +1,13 @@
 {
-  "name": "parallel-precommit",
+  "name": "prehooks",
   "version": "1.0.0",
-  "description": "Runs a set of git precommit hooks in parallel before a commit",
-  "main": "index.js",
+  "description": "Runs a set of git hooks. Support for commit, push hooks",
   "scripts": {
-		"install": "node install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+		"install": "node install"
   },
   "keywords": [
     "pre-commit",
+		"pre-push",
     "git-hooks"
   ],
   "author": "Alan Bradley",
