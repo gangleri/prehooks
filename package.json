@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Runs a set of git hooks. Support for commit, push hooks",
   "scripts": {
-		"install": "node install"
+		"install": "node install",
+		"uninstall": "node uninstall"
   },
   "keywords": [
     "pre-commit",
