@@ -10,8 +10,8 @@ to support all [Git Hooks](http://www.git-scm.com/book/en/v2/Customizing-Git-Git
 ## Supported Hooks
 Prehooks will allow you to use the following git hooks
 
-	* applypatch-msg
-	* pre-applypatch
+  * applypatch-msg
+  * pre-applypatch
   * post-applypatch
   * pre-commit
   * prepare-commit-msg
