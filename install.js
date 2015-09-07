@@ -11,7 +11,7 @@ if (fs.existsSync(projDir + '/.git') === false) {
 
 var hookFile = path.resolve(projDir, '.git', 'hooks', 'hook.js')
 fs.createReadStream(__dirname + '/hook.js').
-	pipe(fs.createWriteStream(hookFile))
+	pipe(fs.createWriteStream(hookFile, {mode: '0755'}))
 
 var hooks = ['commit-msg', 'pre-commit', 'pre-push']
 hooks.forEach(function(hook) {
