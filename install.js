@@ -13,14 +13,24 @@ var hookFile = path.resolve(projDir, '.git', 'hooks', 'hook.js')
 fs.createReadStream(__dirname + '/hook.js').pipe(fs.createWriteStream(hookFile, {mode: '0755'}))
 
 var hooks = ['applypatch-msg',
-  'commit-msg',
-  'post-update',
   'pre-applypatch',
+  'post-applypatch',
   'pre-commit',
   'prepare-commit-msg',
-  'pre-push',
+  'commit-msg',
+  'post-commit',
   'pre-rebase',
-  'update']
+  'post-checkout',
+  'post-merge',
+  'pre-push',
+  'pre-receive',
+  'update',
+  'post-receive',
+  'post-update',
+  'push-to-checkout',
+  'pre-auto-gc',
+  'post-rewrite',
+  'rebase']
 
 hooks.forEach(function (hook) {
   fs.symlinkSync(hookFile, path.resolve(projDir, '.git', 'hooks', hook))

@@ -9,7 +9,10 @@
   "keywords": [
     "pre-commit",
 		"pre-push",
-    "git-hooks"
+		"git",
+    "git-hooks",
+		"dev tool",
+		"workflow"
   ],
   "author": "Alan Bradley",
   "license": "MIT"
